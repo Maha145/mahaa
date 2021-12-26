@@ -32,7 +32,7 @@ jobs:
          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
       # Runs a single command using the runners shell
       - name: docker build ngnix
-        run: docker build -t 5500 maha152/ngnix .
+        run: docker build -t maha152/ngnix .
         -name: docker push
         -run: |
            docker push maha152/ngnix
